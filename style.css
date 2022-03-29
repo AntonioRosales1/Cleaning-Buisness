@@ -2,11 +2,21 @@
   margin: 0;
 }
 body {
-  background-color: seashell;
+  background-color: none;
+}
+#countDown{
+  font-size: 50px;
+  background-color: aliceblue;
+  padding-left: 36%;
+  border: 3px dotted;
+  /* border-bottom */
 }
 .header {
-  background-color: cadetblue;
+  background-color: aliceblue;
   padding: 2rem 0;
+  border: 3px dotted;
+  border-top: none;
+  border-bottom: none;
 }
 
 .header ul {
@@ -23,25 +33,59 @@ body {
 .header ul li:last-child {
   margin-right: 0;
 }
+.gallery{
+   border-top: 3px
+     dotted;
+  /* border-bottom: 15px dotted;  */
+  padding-top: 10%;
+  padding-left: 46%;
+  font-size: 87px;
+}
+.services{
+  border: 3px dotted;
+}
 .about {
   display: flex;
   justify-content: space-around;
   padding-left: 0;
-  padding-top: 60px;
-  font-size: 56px;
-  font-style: revert;
-  font-family: none;
+ 
+  padding-top: 3px;
+  font-size: 50px;
+  font-style: italic;
+  font-family: Arial,helvetica,sans-serif;
 }
 .image {
   margin: auto;
   display: inline;
   justify-content: center;
-  padding-left: 13%;
+  padding-left: 7%;
   padding-top: 5%;
-  width: 29%;
+  width: 23%;
 }
 
 .us {
   padding-top: 10%;
-  padding-left: 38%;
+  margin-left: 31%;
 }
+
+/* margin-left: 10%; */
+
+.usernameInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  width: 16%;
+  margin-left: 30%;
+}
+
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+  padding-top: 2%;
+  font-size: 25px;
+  padding-bottom: 2%;
+  background-color: aliceblue;
