@@ -26,16 +26,43 @@
         Microwave, Fridge, Bathroom & Floors Cleaning
       </p>
       <h1 class="gallery">Gallery</h1>
-      <img
-        class="image"
-        src="./images/C1.jpg"
-        alt="Before and after Pictures"
-      />
-      <img class="image" src="./images/C2.jpg" alt="" />
-      <img class="image" src="./images/C3.jpg" alt="" />
-      <img class="image" src="./images/C6.jpg" alt="" />
-      <img class="image" src="./images/C5.jpg" alt="" />
-      <img class="image" src="./images/C4.jpg" alt="" />
+      <div class="carousel">
+        <button class="carousel_button carousel_button--right">
+          <img src="./images/arrow-next-2825.png" alt="" />
+        </button><div class="carousel_track-container">
+          <ul class="carousel-track">
+        <li class="carousel_slide current-slide">
+          <img
+            class="carousel_image"
+            src="./images/C1.jpg"
+            alt="Before and after Pictures"
+          />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="./images/C2.jpg" alt="" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="./images/C3.jpg" alt="" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="./images/C6.jpg" alt="" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="./images/C5.jpg" alt="" />
+        </li>
+        <li class="carousel_slide">
+          <img class="carousel_image" src="./images/C4.jpg" alt="" />
+        </li>
+      </ul>
+      </div>
+      <button class="carousel_button carousel_button--left">
+        <img src="./images/LeftArow.png" alt="">
+      </button>
+      <div class="carousel_nav">
+        <button class="carousel_indicator current-slide"></button>
+        <button class="carousel_indicator"></button>
+        <button class="carousel_indicator"></button>
+      </div>
     </div>
 
     <div class="us">
@@ -58,5 +85,6 @@ Please submit questions or comments here</textarea
       </ul>
     </footer>
     <script src="./index.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>

@@ -17,7 +17,7 @@ var x = setInterval(function () {
   // Display the result in the element with id="demo"
   document.getElementById(
     "countDown"
-  ).innerHTML = `IMaid Cleaning <br> Easy Get 25% Off!! ${hours}h ${minutes}m ${seconds}s CALL US AT (720) 701-2847`;
+  ).innerHTML = `IMaid Cleaning <br> Easy Get 25% Off!! ${hours}h ${minutes}m ${seconds}s `;
 
   // If the count down is finished, write some text
   if (distance < 0) {
@@ -25,3 +25,29 @@ var x = setInterval(function () {
     document.getElementById("countDown").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+const track = document.querySelector(".carousel-track");
+const slides = Array.from(track.children);
+const nextButton = document.querySelector(`.carousel_button--right`);
+const prevButton = document.querySelector(`carousel_button--left`);
+const dotsNav = document.querySelector(`.carousel_nav`);
+const dots = Array.from(dotsNav.children);
+
+const slideWidth = slides[0].getBoundingClientRect().width;
+
+const setSlidePosition = (slide, index) => {
+  slide.style.left = slideWidth * index + `px`;
+};
+
+slides.forEach(setSlidePosition);
+
+//when click left slide moves left
+//when click right slide moves right
+nextButton.addEventListener(`click`, (e) => {
+  const currentSlide = track.querySelector(`.current-Slide`);
+  //   const nextSlide = currentSlide.nextElementSibling;
+  //   const amountToMove = nextSlide.style.left;
+  //   //move to the next slide
+  //   track.style.transform = `translateX( ` + amountToMove + `)`;
+});
+//when move indicators, move to that slide
